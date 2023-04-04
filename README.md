@@ -22,7 +22,7 @@ Users should be able to:
 ## Links
 
 - Solution URL: [Add solution URL here](https://https://github.com/SeJunB/Result-summary-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://sejunb.github.io/result-summary-component)
 
 ## My process
 
