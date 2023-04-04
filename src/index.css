@@ -7,6 +7,60 @@
 body {
     font-size: 18px;
     height: 100vh;
+    @apply md:flex md:items-center md:justify-center
 }
+
+.bg-result-gradient {
+    @apply bg-gradient-to-b from-background-gradient-top to-background-gradient-bottom 
+}
+
+.bg-score-gradient {
+    @apply bg-gradient-to-b from-circle-gradient-top to-circle-gradient-bottom 
+}
+
+.score-circle {
+    @apply px-10 py-7 rounded-full md:px-14 md:py-12;
+}
+
+.shadow {
+    @apply md:shadow-lg md:shadow-indigo-500/50
+}
+
+.card {
+    @apply flex flex-col items-center p-5 space-y-5 md:space-y-5
+}
+
+.button {
+    @apply px-3 py-3 rounded-full text-center w-[100%] md:w-[80%] 
+}
+.result-border::before, .result-border::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    @apply border-gray-200;
+}
+.result-border-top::before {
+    top: 0;
+    left: 0.25px;
+    @apply border-l-[2px] border-t-[2px] rounded-tl-lg;
+}
+.result-border-top::after{
+    top: 0;
+    right: 0.25px;
+    @apply border-r-[2px] border-t-[2px] rounded-tr-lg;
+}
+
+.result-border-bottom::before {
+    bottom: 0;
+    left: 0.25px;
+    @apply border-l-[2px] border-b-[2px] rounded-bl-lg;
+}
+.result-border-bottom::after{
+    bottom: 0;
+    right: 0.25px;
+    @apply border-r-[2px] border-b-[2px] rounded-br-lg;
+}
+
 
 
