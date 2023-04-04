@@ -1,4 +1,10 @@
 import { ResultShow } from './ResultShow';
+import ReactionIcon from '/images/icon-reaction.svg'
+import MemoryIcon from '/images/icon-memory.svg'
+import VisualIcon from '/images/icon-visual.svg'
+import VerbalIcon from '/images/icon-verbal.svg'
+
+
 
 function App() {
     return (
@@ -20,10 +26,10 @@ function App() {
             {/* Summary */}
             <section className="card justify-center relative md:w-[90%]">
                 <h2 className='self-start font-bold'>Summary</h2>
-                <ResultShow background_color='bg-light-red' text_color='text-dark-red' img='/images/icon-reaction.svg' img_alt="Lighting Bolt" text='Reaction' score={80} />
-                <ResultShow background_color='bg-light-orange-yellow' text_color='text-orange-yellow' img='/images/icon-memory.svg' img_alt="Memory" text='Memory' score={92} />
-                <ResultShow background_color='bg-light-green-teal' text_color='text-green-teal' img='/images/icon-verbal.svg' img_alt="Verbal" text='Verbal' score={61} />
-                <ResultShow background_color='bg-light-cobalt-blue' text_color='text-cobalt-blue' img='/images/icon-visual.svg' img_alt="Visual" text='Visual' score={72} />
+                <ResultShow background_color='bg-light-red' text_color='text-dark-red' img={ReactionIcon} img_alt="Lighting Bolt" text='Reaction' score={80} />
+                <ResultShow background_color='bg-light-orange-yellow' text_color='text-orange-yellow' img={MemoryIcon} img_alt="Memory" text='Memory' score={92} />
+                <ResultShow background_color='bg-light-green-teal' text_color='text-green-teal' img={VerbalIcon} img_alt="Verbal" text='Verbal' score={61} />
+                <ResultShow background_color='bg-light-cobalt-blue' text_color='text-cobalt-blue' img={VisualIcon} img_alt="Visual" text='Visual' score={72} />
                 <button className="button text-lg text-white bg-dark-gray-blue">Continue</button>
             </section>
 
