@@ -33,7 +33,7 @@ function App() {
                 <ResultShow background_color='bg-light-orange-yellow' text_color='text-orange-yellow' img='/images/icon-memory.svg' img_alt="Memory" text='Memory' score={92} />
                 <ResultShow background_color='bg-light-green-teal' text_color='text-green-teal' img='/images/icon-verbal.svg' img_alt="Verbal" text='Verbal' score={61} />
                 <ResultShow background_color='bg-light-cobalt-blue' text_color='text-cobalt-blue' img='/images/icon-visual.svg' img_alt="Visual" text='Visual' score={72} />
-                <button className="w-[100%] px-3 py-3 rounded-xl text-white text-lg text-center bg-dark-gray-blue">Continue</button>
+                <button className="w-[100%] px-3 py-3 rounded-full text-white text-lg text-center bg-dark-gray-blue">Continue</button>
            </section>
         </main>
     );
